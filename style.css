@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+@keyframes spin{ 
+    from {
+        transform: rotateZ(0deg) rotateY(0deg);
+
+    }
+
+    to {
+        transform: rotateZ(360deg) rotateY(360deg);
+    }
+}
+.container {
+    align-items: center;
+    display: flex;
+    padding: 4% 7%;
+    background: rgb(62,41,224);
+background: linear-gradient(90deg, rgba(62,41,224,1) 0%, rgba(164,123,147,1) 100%);
+    justify-content: space-between;
+    color: white;
+    border-radius: 0 1em 0 2.4em;
+}
+
+.dog {
+    margin: 3em 0 0;
+}
+
+
+.dog-child {
+    text-align: center;
+}
+
+
+img {
+    max-height: 300px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px 2px grey; 
+}
+
+.spin {
+    animation: spin .8s infinite ease-in-out;
+}
+
+.spinner {
+    font-size: 2rem;
+    text-align: center;
+    animation: spin 1.2s infinite alternate ease-in-out;
+    position: relative;
+    right: -45%;
+    z-index: 1;
+    margin: 0 auto;
+    top: -220px;
+    display: none;
+}
+
+select {
+    width: 200px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background: rgb(62,41,224);
+    color: white;
+    outline: none;
+    border-color: transparent;
+    
+}
+
