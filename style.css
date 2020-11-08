@@ -41,6 +41,7 @@ img {
     max-height: 300px;
     border-radius: 5px;
     box-shadow: 4px 4px 6px 2px grey; 
+    max-width: 350px;
 }
 
 .spin {
